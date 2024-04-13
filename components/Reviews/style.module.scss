@@ -16,3 +16,12 @@
     background: #D9D9D9;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .reviewPart{
+    flex-wrap: wrap;
+    .singleReview{
+      margin-bottom: 3vh;
+    }
+  }
+}

@@ -23,7 +23,7 @@ const Content: FC<{ products: IProduct[] }> = ({products}) => {
                     <div className={styles.price}>
                         цена:{singleProduct.price}₽
                     </div>
-                    <BuyCounter/>
+                    <BuyCounter price={singleProduct.price} productName={singleProduct.title} id={singleProduct.id}/>
                 </div>
             </div>
         })}

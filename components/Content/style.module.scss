@@ -29,7 +29,7 @@
       }
     }
 
-    .cardBottom{
+    .cardBottom {
       width: 90%;
       box-sizing: border-box;
       text-align: center;
@@ -50,8 +50,27 @@
 
     .price {
       font-size: 36px;
-      margin: 5vh auto ;
+      margin: 5vh auto;
       text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+     & > div {
+       max-width: 50%;
+       flex: 0 0 calc(50% - 1rem)!important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 1.25rem 5%;
+    & > div {
+      max-width: 100%;
+      flex: 0 0 100%!important;
     }
   }
 }

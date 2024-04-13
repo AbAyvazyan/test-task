@@ -23,4 +23,16 @@ interface IProductApiResult {
     products: IProduct[]
 }
 
-export type {IReviews, IErrorApi, IProduct, IProductApiResult}
+interface IOrderResponse {
+    success: number,
+    error?: string
+}
+
+interface ICartStorage {
+    count: number,
+    id: number,
+    price: number,
+    productName: string
+}
+
+export type {IReviews, IErrorApi, IProduct, IProductApiResult, IOrderResponse,ICartStorage }
